@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Permanent Marker';
+    src: url(/src/assets/fonts/PermanentMarker-Regular.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url(/src/assets/fonts/JetBrains/webfonts) format('woff2');
+  }
+}
