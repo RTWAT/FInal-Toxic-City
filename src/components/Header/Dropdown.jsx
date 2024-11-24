@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Dropdown = () => {
@@ -24,6 +25,8 @@ const Dropdown = () => {
       },
     },
   };
+
+  const members = ['Kilian Lechner', 'Sebastian Gandler', 'David Fischer', 'Felix Aschaber', 'Nico Achorner'];
 
   return (
     <div className="relative inline-block ml-auto">
@@ -64,41 +67,15 @@ const Dropdown = () => {
             <ul
               className="py-2 text-sm"
               aria-labelledby="dropdownDefaultButton">
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-gray-200 transition">
-                  Kilian Lechner
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-gray-200 transition">
-                  Sebastian Gandler
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-gray-200 transition">
-                  David Fischer
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-gray-200 transition">
-                  Felix Aschaber
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-gray-200 transition">
-                  Nico Achorner
-                </a>
-              </li>
+              {members.map((member) => (
+                <li key={member}>
+                  <Link
+                    to={`/member/${member.toLowerCase().replace(' ', '-')}`}
+                    className="block px-4 py-2 hover:bg-gray-200 transition">
+                    {member}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </motion.div>
         )}

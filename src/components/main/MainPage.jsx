@@ -1,15 +1,15 @@
 import React from 'react';
 
-export default function MainContent() {
+export default function MainPage() {
   return (
     <div className="flex-grow bg-[#e0dcd7]">
       <main className="mt-20 mx-20 ">
         <h1 className="font-marker text-8xl mb-4 underline-offset-8 underline ml-10">Toxic City</h1>
         <div className="relative">
           <img
-            src="./src/assets/images/Band.jpg"
+            src="/src/assets/images/Band.jpg"
             alt="Bild von Toxic City"
-            className="float-right w-[680px] rounded-xl shadow-2xl ml-10 mr-20 max-md:mr-4 my-12 "
+            className="float-right w-[680px] rounded-xl shadow-2xl ml-10 mr-20 max-md:mr-4 my-12"
           />
           <p className="text-2xl font-mono font-medium">
             <br />
