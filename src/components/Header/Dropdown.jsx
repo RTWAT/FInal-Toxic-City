@@ -33,7 +33,7 @@ const Dropdown = () => {
       <motion.button
         id="dropdownDefaultButton"
         onClick={toggleDropdown}
-        className="text-black inline-flex items-center py-2 hover:text-gray-500 font-medium text-lg"
+        className="font-lato text-black inline-flex items-center py-2 hover:text-gray-500 font-medium text-lg"
         type="button"
         whileTap={{ scale: 0.95 }}>
         Mitglieder
@@ -59,7 +59,7 @@ const Dropdown = () => {
         {isOpen && (
           <motion.div
             id="dropdown"
-            className="absolute z-10 bg-slate-100 rounded-lg shadow w-44 font-medium text-lg"
+            className="font-lato absolute z-10 bg-slate-100 rounded-lg shadow w-44 font-medium text-lg"
             initial="hidden"
             animate="visible"
             exit="hidden"

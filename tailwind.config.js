@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         marker: ['Permanent Marker'],
         mono: ['JetBrains Mono', 'monospace'],
+        lato: ['Lato', 'JetBrains Mono'],
       },
 
       colors: {},

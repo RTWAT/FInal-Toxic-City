@@ -1,9 +1,10 @@
 import React from 'react';
+import GuitarGlobeScene from '../GuitarGlobeScene';
 
 export default function MainPage() {
   return (
     <div className="flex-grow bg-[#e0dcd7]">
-      <main className="mt-20 mx-20 ">
+      <main className="mt-20 mx-20">
         <h1 className="font-marker text-8xl mb-4 underline-offset-8 underline ml-10">Toxic City</h1>
         <div className="relative">
           <img
@@ -18,6 +19,10 @@ export default function MainPage() {
             to Hell und T.N.T., die sie mit Leidenschaft und kraftvollem Sound performen. Ihr vielseitiges Talent und ihre mitreißende Bühnenpräsenz machen sie zu einem Highlight der lokalen Musikszene. Neben Covers arbeiten sie auch an eigenen Stücken, die ihren unverwechselbaren Stil
             widerspiegeln. Ob auf kleinen Bühnen oder bei Open-Air-Events – ein Muss für Fans von guter Live-Musik!
           </p>
+        </div>
+        <div className="mt-12">
+          <h2 className="font-marker text-4xl mb-4">Unsere Instrumente</h2>
+          <GuitarGlobeScene />
         </div>
       </main>
     </div>

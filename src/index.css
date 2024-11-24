@@ -11,4 +11,8 @@
     font-family: 'JetBrains Mono';
     src: url(/src/assets/fonts/JetBrains/webfonts) format('woff2');
   }
+  @font-face {
+    font-family: 'Lato';
+    src: url(/src/assets/fonts/Lato) format('woff2');
+  }
 }

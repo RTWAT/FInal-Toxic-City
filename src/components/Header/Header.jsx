@@ -33,7 +33,7 @@ export default function Header() {
                 <li key={item.name}>
                   <Link
                     to={item.link}
-                    className="font-medium text-lg py-2 px-4 hover:text-gray-500">
+                    className="font-lato font-medium text-lg py-2 px-4 hover:text-gray-500">
                     {item.name}
                   </Link>
                 </li>
