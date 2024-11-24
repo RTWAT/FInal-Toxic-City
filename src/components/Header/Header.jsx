@@ -24,15 +24,16 @@ export default function Header() {
             <Link
               to="/"
               className="flex items-center space-x-3 rtl:space-x-reverse">
-              <h3 className="font-marker text-[1.5rem] ml-1 ">Toxic City</h3>
+              <h3 className="font-marker text-[1.5rem] ml-6 2xl:-ml-10 min-[1750px]:-ml-56">Toxic City</h3>
             </Link>
+
             <Dropdown />
             <ul className="hidden md:flex items-center space-x-4">
               {menuItems.map((item) => (
                 <li key={item.name}>
                   <Link
                     to={item.link}
-                    className="py-2 px-4 hover:text-gray-500">
+                    className="font-medium text-lg py-2 px-4 hover:text-gray-500">
                     {item.name}
                   </Link>
                 </li>
