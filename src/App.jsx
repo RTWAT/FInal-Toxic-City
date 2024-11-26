@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import MainPage from './components/main/MainPage';
-import About from './components/About';
+import Über_uns from './components/About';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
-import MemberPage from './components/MemberPage';
+import Mitglieder from './components/MemberPage';
 
 export default function App() {
   return (
@@ -16,8 +16,8 @@ export default function App() {
           element={<MainPage />}
         />
         <Route
-          path="/uber-uns"
-          element={<About />}
+          path="/über-uns"
+          element={<Über_uns />}
         />
         <Route
           path="/blog"
@@ -28,8 +28,8 @@ export default function App() {
           element={<Contact />}
         />
         <Route
-          path="/member/:name"
-          element={<MemberPage />}
+          path="/mitglieder/:name"
+          element={<Mitglieder />}
         />
       </Routes>
     </div>
