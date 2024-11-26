@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '/src/components/ui/focus-cards';
 
 export default function MainPage() {
   return (
@@ -19,6 +20,7 @@ export default function MainPage() {
             widerspiegeln. Ob auf kleinen Bühnen oder bei Open-Air-Events – ein Muss für Fans von guter Live-Musik!
           </p>
         </div>
+        <Card />
       </main>
     </div>
   );
